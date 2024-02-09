@@ -8,7 +8,7 @@ const spreadsheet = SpreadsheetApp.openByUrl(SPREADSHEET_URL);
  * The URL of the Google Spreadsheet where data will be pushed.
  * @type {string}
  */
-const SPREADSHEET_URL = "target_spreadsheet_url"; // make a copy of the spreadsheet, don’t change any tabs in the sheet
+const SPREADSHEET_URL = "target_spreadsheet_url";
 
 /**
  * Get the sheet by name where data will be pushed.
