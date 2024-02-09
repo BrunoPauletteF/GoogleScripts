@@ -1,14 +1,26 @@
 /**
+ * Open the spreadsheet by URL
+ *
+ */
+const spreadsheet = SpreadsheetApp.openByUrl(SPREADSHEET_URL);
+
+/**
  * The URL of the Google Spreadsheet where data will be pushed.
  * @type {string}
  */
-const SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1mVRDMhCuHNCI5T0jfyeq7tOdxuHRbNOE6xQV12RCxTw/"; // make a copy of the spreadsheet, don’t change any tabs in the sheet
+const SPREADSHEET_URL = "target_spreadsheet_url"; // make a copy of the spreadsheet, don’t change any tabs in the sheet
+
+/**
+ * Get the sheet by name where data will be pushed.
+ * @type {string}
+ */
+const sheet = spreadsheet.getSheetByName('your_target_sheet_name');
 
 /**
  * Number of days to look back at for shopping performance data.
  * @type {number}
  */
-const daysAgo = 90;
+const daysAgo = 60;
 
 /**
  * The main function that orchestrates the script execution.
@@ -87,11 +99,6 @@ function getShoppingProducts(daysAgo) {
  * @param {Array<Array<string>>} data - Array of arrays representing the data to be pushed.
  */
 function pushToSpreadsheet(data) {
-  // Open the spreadsheet by URL
-  const spreadsheet = SpreadsheetApp.openByUrl(SPREADSHEET_URL);
-
-  // Get the sheet by name
-  const sheet = spreadsheet.getSheetByName('Product ID - 60 Dias');
 
   // Clear existing content from the sheet
   const lastRow = sheet.getMaxRows();
