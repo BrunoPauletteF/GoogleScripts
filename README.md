@@ -12,3 +12,9 @@
 - [Google Analytics - Data API Documentation](https://developers.google.com/analytics/devguides/reporting/data/v1/rest)
 - [Google Analytics - Data API Documentation - Dimensions & Metrics](https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema)
 - [Google App Script - Analytics Data API](https://developers.google.com/apps-script/advanced/analyticsdata)
+
+
+## Graph Api - Data API
+- [Graph API - Marketing Documentation](https://developers.facebook.com/docs/marketing-apis/)
+- [Graph API Explorer](https://developers.facebook.com/tools/explorer/)
+- [Graph API - Ads Insights Reference](https://developers.facebook.com/docs/marketing-api/reference/ads-insights/)
